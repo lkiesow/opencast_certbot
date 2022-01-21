@@ -13,5 +13,3 @@ galaxy_info:
       versions:
         - 7
         - 8
-dependencies:
-  - elan.opencast_nginx
