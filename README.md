@@ -7,8 +7,10 @@ Role Variables
 --------------
 
 - `opencast_letsencrypt_email`
-    - Email address for Let's Encrypt account (_required_)
-	 - This is used by Let's Encrypt to send certificate expiration warnings if necessary.
+  - Email address for Let's Encrypt account (_required_)
+  - This is used by Let's Encrypt to send certificate expiration warnings if necessary.
+- `opencast_certbot_deploy_hook`
+  - Command to run after certbot has updated certificate. The value is optional and defaults to None.
 
 Dependencies
 ------------
