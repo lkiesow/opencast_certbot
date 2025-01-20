@@ -34,6 +34,7 @@
       -m {{ opencast_letsencrypt_email }}
       certonly
       --domains {{ inventory_hostname }}
+      --deploy-hook "{{ opencast_certbot_deploy_hook | default(None) }}"
     creates: /etc/letsencrypt/live/{{ inventory_hostname }}/fullchain.pem
 
 - name: Symlink certificates
